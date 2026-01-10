@@ -1,0 +1,225 @@
+/* fonts styling */
+
+/* green button starts */
+.btn-parrot{
+    /* border: 2px solid black !important; */
+    background: #8cff2e !important;
+    color: black !important;
+    font-weight: 500 !important;
+    border-radius: 50px !important;
+    font-size: 20px;
+    padding: 10px 20px !important;
+    transition: all 0.3s ease-in-out !important;
+    box-shadow: 2px 5px 10px #8cff2eb7;
+}
+
+.bi-arrow-up-right{
+  font-size: 20px;
+  margin-left: 5px;
+}
+.btn-parrot .bi-arrow-up-right{
+  transition: transform 0.35s ease; /* not on :hover */
+  display: inline-block;            /* required so transform can apply */
+  transform-origin: center;
+}
+.btn-parrot:hover,
+.btn-parrot:focus {
+  box-shadow: none;
+}
+
+.btn-parrot:hover .bi-arrow-up-right,
+.btn-parrot:focus .bi-arrow-up-right {
+  transform: rotate(45deg);
+}
+/* green button ends */
+
+  .manrope-text {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-heading {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* custom classes */
+
+.hi-85{
+  height: 85vh;
+}
+.bg-black{
+  background-color: black !important;
+}
+.text-bg-white{
+    background-color: #ffffffe1 !important;
+}
+
+.text-parrot{
+    color: #8cff2e !important;
+}
+.project-heading{
+    font-size: 4rem;
+    /* margin-left: 20px; */
+}
+
+.gap-1px{
+    gap: 1px !important;
+}
+
+.sub-cont{
+  width: 98.45vw;
+  gap: 2px;
+  padding: 0px;
+}
+
+.pro-box{
+  background: black;
+  transition: all 0.3s ease-in-out;
+}
+.pro-box:hover,
+.pro-box:focus{
+  
+  background-color: #151618;
+}
+
+
+/* Image anchored at bottom */
+.card-img {
+  transform: scale(0.75);
+  opacity: 0.85;
+  transition: transform 1000ms ease, opacity 1000ms ease;
+  will-change: transform, opacity;       /* smoother on some browsers */
+}
+.card-img.in-view {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+/* Optional hover lift for entire card */
+.card:hover {
+  transform: translateY(-2px);
+  transition: transform 200ms ease;
+}
+
+
+
+
+
+/* navbar  */
+#navbar{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #ffffff71;
+    /* min-height: 108px; */
+}
+/* hero section  */
+#hero{
+    /* height: 120vh; */
+    width: 100%;
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.bg-flower{
+  /* height: 90vh; */
+    background: url('../images/pro1-back.png') no-repeat center center/cover;
+}
+
+/* 1) Smooth animation lives on the base state */
+.navbar-brand .bi {
+  transition: transform 0.35s ease; /* not on :hover */
+  display: inline-block;            /* required so transform can apply */
+  transform-origin: center;         /* optional but safe */
+}
+
+/* 2) Hover/focus on the link rotates the icon */
+.navbar-brand:hover .bi,
+.navbar-brand:focus .bi {
+  transform: rotate(270deg);
+}
+
+
+
+
+/* tool section */
+
+.skill-bar {
+  background: #ececec;
+  height: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 8px;
+  position: relative;
+}
+
+.progress {
+  background: #29e029;
+  height: 100%;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0px;
+  transition: width 1s cubic-bezier(.7,.2,.3,1);
+}
+
+
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  background: #f8f8f8;
+  border-radius: 12px;
+}
+.tool-skill-scroll{
+  overflow-y: auto;
+  padding-right: 10px;
+  scroll-behavior: smooth;
+}
+
+.hit{
+  overflow: visible !important;
+}
+
+.bloon{
+  overflow: visible;
+  z-index: 100;
+  background-color: #8cff2e;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 15px;
+  padding: 2px 6px;
+  color: black;
+}
+
+/* footer styling */
+footer a.text-white-50:hover {
+    color: #ffffff !important;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .btn-floating {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
